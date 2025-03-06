@@ -29,15 +29,16 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
+    // Declare variables as the id of them
         firstNumberInput = findViewById(R.id.inputFirstNumber);
         secondNumberInput = findViewById(R.id.inputSecondNumber);
         textOutput = findViewById(R.id.textResult);
 
 
+
     }
 
-    // Calculations save TOO MUCH Time Complexity lol.
+    // Calculations
     public void addNumbers(View view) {
         textOutput.setTextSize(30);
         if (firstNumberInput.getText().toString().isEmpty() || secondNumberInput.getText().toString().isEmpty()) {
